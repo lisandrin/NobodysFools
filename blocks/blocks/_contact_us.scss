@@ -1,0 +1,53 @@
+.contact_us{
+    height: 140px;
+    width: 100%;
+    margin: 20px auto;
+    background-color: #FFF;
+
+    @media screen and(max-width: 770px){ 
+        height: 250px; 
+    }
+
+    .row{
+        background-color: #e0e0e0;
+        width: 100%;
+        height: 120px;
+        border-left: 10px solid #33B2FF;
+
+        @media screen and(max-width: 770px){
+            height: 250px;
+        }
+
+        .c-left{
+            padding: 10px 0;
+            left: 50px;
+
+            // @media screen and (max-width:){
+                
+            // }
+
+            h3{
+                font-size: 2em;
+                margin-top: 10px;
+                color: #333333;
+            }
+        }
+
+        .c-right{
+            display: inline-block;
+            margin-top: 20px;
+            padding-left: 15%;
+
+            button{
+                border-radius: 25px;
+                font-size: 2em;
+                background-color: #33B2FF;
+                border:1px solid #33B2FF;
+
+                &:hover{
+                    background-color: #4586b1; 
+                }
+            }
+        }
+    }
+}

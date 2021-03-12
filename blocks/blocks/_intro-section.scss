@@ -1,0 +1,47 @@
+.intro{
+    width: 100%;
+    height: 570px;
+    background-color: #FFF;
+    font-family: Georgia;
+    display: flex;
+
+    @media screen and (max-width: 990px) {
+        height: 1000px; 
+        align-items: center;
+
+        .i-left{
+            img{
+                     
+            }
+        }
+    }
+
+    @media screen and(max-width: 768px){
+        height: 100%;
+        
+    }
+
+    .i-left{
+        padding-top: 50px; 
+    }
+
+    .card{
+        width: 225px;
+        height: 228px;
+        top: 10px;
+
+        .card-img-top{
+            background-repeat: no-repeat;
+            background-size: contain;
+            width: 85px;
+            height: 80px;
+        }
+        .card-body{
+            text-align:center;
+
+            p{
+                font-size: 13px;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+.header{
+    background-color: #2e2e2e;   
+    width: 100%;
+
+    .links-section-li{
+        width: 100%;  
+        display: flex; 
+        
+        ul{
+            list-style-type:none;
+            text-decoration:none;
+            margin: 0;
+            overflow:hidden;
+            display:inline-block;
+            padding-top: 10px;
+        
+    
+            li{
+                // border-left: 1px solid #9f9f9f;
+                float:left;
+                padding:0px 5px;
+                           
+                a{
+                    color: #9f9f9f;
+	                text-decoration:none;
+                    border-left: 1px solid #9f9f9f;
+                    margin-top: 1em;
+                    padding:0px 8px;
+                    transition: 0.3s;
+
+                    &:hover{
+                        color:#0099ff;
+                        border-left:#0099ff 1px solid;
+                    }
+                }
+            }
+        }
+    }
+
+    
+    .social-icons{
+        list-style: none;
+        padding-top: 15px;
+        padding-right: -20px;
+        display: flex;
+
+        @media screen and (max-width:770px){
+            margin-top: 20px;
+            justify-content: space-around;
+        }
+
+        li{
+            vertical-align: middle;
+            display: inline;
+            height: 60px; 
+            padding-left: 20px;
+    
+            a{
+                color: #fff;
+                text-decoration: none;
+
+                .fa-facebook-f{
+                    padding:10px 12px;
+                    transition: .5s;
+                    background-color: #322f30;
+                    border-radius: 100%;
+     
+                    &:hover {
+                        background-color: #3d5b99;
+                    }
+                }
+
+                .fa-twitter {
+                    padding:10px 12px;
+                    transition: .5s;
+                    background-color: #322f30;
+                    border-radius: 100%;
+
+                    &:hover {
+                        background-color: #00aced;
+                    }
+                }
+
+                .fa-rss {
+                    padding:10px 12px;
+                    transition: .5s;
+                    background-color: #322f30;
+                    border-radius: 100%;
+
+                    &:hover {
+                        background-color: #eb8231;
+                    }
+                }
+
+                .fa-youtube {
+                    padding:10px 12px;
+                    transition: .5s;
+                    background-color: #322f30;
+                    border-radius: 100%;
+
+                    &:hover {
+                        background-color: #e64a41;
+                    }
+                }
+                .fa-linkedin-in{
+                    padding:10px 14px;
+                    transition: .5s;
+                    background-color: #322f30;
+                    border-radius: 100%;
+
+                    &:hover {
+                        background-color: #0073a4;
+                    }
+                }
+            }
+        }                
+    }
+}
