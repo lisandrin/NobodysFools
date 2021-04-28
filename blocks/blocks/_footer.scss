@@ -1,25 +1,26 @@
 .nav-footer{
-    height: 450px;
+    height: auto;
     width: 100%;
     background-color: #1a1a1a;
     display: flex;
-
-    @media screen and (max-width: 990px) {
-        height: 800px;
-        align-items: center;
-    }
-    @media screen and (max-width: 770px) {
-        height: 1200px;
-        align-items: center;
-    }
-
     
-    .row{
+    .nav__footer__wrapper{
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         padding-top:20px;
+        height: auto;
+        gap: 20px;
+        padding-bottom: 2em;
 
-        @media screen and (max-width: 770px) {
+        @media screen and (max-width: 1200px) {
             padding-top: 100px;
             padding-bottom: 30px;
+            grid-template-columns: 1fr 1fr;
+        }
+        @media screen and (max-width: 641px) {
+            text-align: center;
+            grid-template-columns: 1fr;
         }
 
         h3{
@@ -27,11 +28,14 @@
             color: #FFF;
         }
 
-        .card{
-            width: 225px;
-            height: 280px;
+        .nav__footer__item{
+            width: 100%;
+            height: auto;
             background-color: #1a1a1a;
 
+            .item__text{
+                background-color: #1a1a1a;
+            }
             img{
                 width: 225px;
                 height: 100px;
@@ -56,13 +60,13 @@
             }
         }
 
-        .card-list{
-            height: 280px;
 
-            ul{
+            .card-list{
                 list-style: none;
+                display: inline-block;
     
                 li{
+                    width: 230px;
                     border-bottom: 2px solid grey;
                     padding-top: 5px;
                     a{
@@ -114,7 +118,6 @@
             border: 1px solid #232323;
         }
     }
-}
 
 .footer{   
     width: 100%;   

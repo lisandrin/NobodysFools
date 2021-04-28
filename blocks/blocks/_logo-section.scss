@@ -1,7 +1,20 @@
 .logo-section{
+    width: 100%;
     overflow: auto;
+    display: flex;
     background-color: white;
-    height: 100px;  
+    height: auto;
+
+    .logo__content__wrapper{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 1em;
+
+        @media (max-width: 1200px) {
+            flex-direction: column;
+            text-align: center;
+        }
         .logo{
             width: 100%;
             height: 100%;
@@ -9,36 +22,39 @@
             background-size: contain;
             padding-top: 15px;
         }
-    
-    .srcc{
-        margin-top: 20px; 
 
-        .form-inline{
-            padding-left: 33%;
+        .input__wrapper{
+            width: 45%;
+            display: flex;
+            margin-top: 2em;
 
-            .search{
-                margin-right: 20px;
-                padding-top: 10px;
-                position: relative;
-            }
-            button{
-                text-transform: uppercase;
-                color: white;
-                width: 125px;
-                background: #0099ff;
-                padding: 10px;
-                border-radius: 10px;
-                border:none;
-    
-                &:hover{
-                    background-color: #106298;
+            .form-inline{
+                width: 100%;
+                
+                @media (max-width: 995px) {
+                    display: inline-block;
+                    flex-flow: nowrap;
+
+                    button{
+                        margin-top: 10px;
+                    }
                 }
-
+    
+                button{
+                    text-transform: uppercase;
+                    color: white;
+                    width: 125px;
+                    background: #0099ff;
+                    padding: 10px;
+                    border-radius: 10px;
+                    border:none;
+        
+                    &:hover{
+                        background-color: #106298;
+                    }
+    
+                }
             }
-        }
-
-        @media (max-width:850px) {
-            display: none;
         }
     }
 }

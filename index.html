@@ -6,12 +6,13 @@
 	<link rel="stylesheet" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="main.css">
-	<link rel="stylesheet" href="main.scss">
 
+	<!--  -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" 
-	integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+	
+	<!-- font awesome -->
+	<script src="https://kit.fontawesome.com/1b59f50f56.js" crossorigin="anonymous"></script>
+	<!--  -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
@@ -21,67 +22,62 @@
 <body>  
 	<header class="header">  
 		<div class="container">
-			<div class="row"> 
-				<div class="col-lg-6 col-md-6 col-sm-12 left">
-					<div class="links-section-li">
-						<ul class="nav">
-							<li class="nav-item">
-							  <a class="nav-link" href="#">Sign Up</a>
-							</li>
-							<li class="nav-item">
-							  <a class="nav-link" href="#">Login</a>
-							</li> 
-							<li class="nav-item">
-							  <a class="nav-link" href="#">Rss Feeds</a>
-							</li>
-							<li class="nav-item">
-							  <a class="nav-link" href="#">Archieved News</a>
-							</li>
-						</ul>
-					</div>
+			<div class="header__wrapper"> 
+				<div class="links-section">
+					<ul class="nav">
+						<li class="nav-item">
+							<a class="nav-link" href="#">Sign Up</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Login</a>
+						</li> 
+						<li class="nav-item">
+							<a class="nav-link" href="#">Rss Feeds</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#">Archieved News</a>
+						</li>
+					</ul>
 				</div>
-            	<div class="col-lg-6 col-md-6 col-sm-12 right"> 
-          			<div class="social-icon-section">
-							<ul class="col-xs-5 col-sm-4 col-sm-offset-2 col-md-3  social-icons">
-								<li><a href="$" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
-								<li><a href="https://twitter.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a></li>
-								<li><a href="$" class="social-icon"><i class="fa fa-rss"></i></a></li>
-								<li><a href="$" class="social-icon"><i class="fab fa-youtube"></i></a></li>
-								<li><a href="$" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
-							</ul>
-          			</div>
-        		</div>
+				<div class="social-icon-section">
+					<ul class="social-icons">
+						<li><a href="$" class="social-icon"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="https://twitter.com/?lang=en" class="social-icon"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="$" class="social-icon"><i class="fa fa-rss"></i></a></li>
+						<li><a href="$" class="social-icon"><i class="fab fa-youtube"></i></a></li>
+						<li><a href="$" class="social-icon"><i class="fab fa-linkedin-in"></i></a></li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</header>
 	<section class="list-section">
     	<div class="container">
-			<div class="row">
-				<div class="right-h">
-					<ul class="nav nav-pills nav-justified">
-						<li><a class="nav_link" href="#">Homepage</a></li>	
-						<li><a class="nav_link" href="#">Style Demo</a></li>
-				 		<li><a class="nav_link" href="#">Full Width</a></li>
-						<li><a class="nav_link" href="#">Drop Down</a></li>		
+			<div class="list__wrapper">
+				<div class="burger">
+					<i class="fas fa-bars"></i>
+				</div>
+				<ul class="nav nav-pills nav-justified nav-ul">
+					<li><a class="nav_link" href="#">Homepage</a></li>	
+					<li><a class="nav_link" href="#">Style Demo</a></li>
+					<li><a class="nav_link" href="#">Full Width</a></li>
+					<li><a class="nav_link" href="#">Drop Down</a></li>		
 
-						<li><a class="nav_link" href="#">Gallery</a></li>
-						<li><a class="nav_link" href="#">Portfolio</a></li>
-						<li><a class="nav_link" href="#">Link text</a></li>
-						<li><a class="nav_link" href="#">Long Link</a></li>			
-					</ul>
-				</div>	
+					<li><a class="nav_link" href="#">Gallery</a></li>
+					<li><a class="nav_link" href="#">Portfolio</a></li>
+					<li><a class="nav_link" href="#">Link text</a></li>
+					<li><a class="nav_link" href="#">Long Link</a></li>			
+				</ul>
 			</div>
     	</div>  
 	</section> 
 	<section class="logo-section">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-12 col-sm-12">
-					<div class="logo">
-						<img src="./img/Logo.png" alt="Logo1">
-					</div>
+			<div class="logo__content__wrapper">
+				<div class="logo">
+					<img src="./img/Logo.png" alt="Logo1">
 				</div>
-				<div class="col-sm-6 srcc"> 
+				<div class="input__wrapper">
 					<form class="form-inline" action="/action_page.php">
 						<input class="form-control mr-sm-2" type="text" placeholder="Search">
 						<button class="btn btn-success" type="submit">Search</button>
@@ -90,7 +86,7 @@
 			</div>
 		</div>
     </section>
-<!-- //////////////////TITLE SECTION/////////////// -->
+	<!-- Title section -->
 	<section class=" slider-section">
 		<div class="container">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -111,7 +107,7 @@
 								<h2>Your tittle can be long<br>and descriptiv</h2>
 								<p>Cursuspenatisaccum ut curabitur nulla tellus tor<br>
 									ames a in curabitur pede. Idet mollisi eros dis<br>orci congue elis et curabitur.</p>
-    							<a href="#">READ MORE >></a> 
+								<a href="#">READ MORE <i class="fas fa-angle-double-right"></i></a> 
 					 	 	</div>
 				  		</div>
 				  		<div class="col-lg-6 col-md-6 col-sm-12 mrg">
@@ -126,7 +122,7 @@
 								<h2>Your tittle can be long<br>and descriptiv</h2>
 								<p>Cursuspenatisaccum ut curabitur nulla tellus tor<br>
 									ames a in curabitur pede. Idet mollisi eros dis<br>orci congue elis et curabitur.</p>
-								<a href="#">READ MORE >></a>
+								<a href="#">READ MORE <i class="fas fa-angle-double-right"></i></a> 
 							</div>
 				  		</div>
 				  		<div class="col-sm-6 col-md-6 col-lg-6 mrg">
@@ -141,7 +137,7 @@
 								<h2>Your tittle can be long<br>and descriptiv</h2>
 								<p>Cursuspenatisaccum ut curabitur nulla tellus tor<br>
 									ames a in curabitur pede. Idet mollisi eros dis<br>orci congue elis et curabitur.</p>
-								<a href="#">READ MORE >></a> 
+									<a href="#">READ MORE <i class="fas fa-angle-double-right"></i></a> 
 							</div>
 				  		</div>
 				  		<div class="col-sm-6 col-md-6 col-lg-6 mrg">
@@ -155,7 +151,7 @@
 		  </div>
 		</div>
 	</section>
-<!-- ////////////////// INTRO ///////////////////// -->
+	<!-- Intro -->
 	<section class="intro">
     	<div class="container">
      		<div class="row">
@@ -206,52 +202,50 @@
 			</div>
   		</div>
 	</section>
-<!-- ///////////////////CONTACT US///////////////// -->
+	<!-- Contact Us -->
 	<article class="contact_us">
 		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-md-12 col-sm-12 c-left">
+			<div class="contact__wrapper">
+				<div class="contact__us__text">
 					<h3>Lorem ipsum dolor sit amet elit !</h3>
       				<p>Why not try our services today, you won't regret your choice !</p>
 				</div>
-				<div class="col-lg-6 col-md-12 col-sm-12 c-right">
+				<div class="contact__us__btn">
 					<button type="button" class="btn btn-primary btn-lg">Contact us today</button>
 				</div>
 			</div>
 		</div>
 	</article>
-	<!-- //////////////////CONTACT BAR///////////// -->
+	<!-- Contact bar -->
 	<footer class="nav-footer">
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-3 col-md-5 col-sm-12">
+		<div class="nav__footer__wrapper">
+			<div class="nav__footer__item">
 				<h3>ABOUT US</h3>
-				<div class="card">
+				<div class="item__text">
 					<img src="./img/px.jpeg" alt="comp">
 					<p>Lorem ipsum dolor sit amet,<br> consectetur adipiscing elit. Nunc<br> non diam erat. In fringilla massa ut<br> nisi ullamcorper pellantesque. Quisque non luctum sem. Nullam<br> non magna vel nisi posuere<br> bibendum vitae sed dui.</p>
 					<a class="read" href="#">Read More >></a>
 				</div>
 			</div>
-			<div class="col-lg-3 col-md-5 col-sm-12">
+			<div class="nav__footer__item">
 				<div class="bar_links">
 					<h3>QUICK LINKS</h3>
-					<div class="card-list">
-						<ul>
-							<li><a  href="#">» Lorem ipsum dolor sit</a></li>
-							<li><a  href="#">» Amet consectetur</a></li>
-							<li><a  href="#">» Praesent vel sem id</a></li>
-							<li><a  href="#">» Curabitur hendrerit est</a></li>
-							<li><a  href="#">» Aliquam eget erat nec sapien</a></li>
-							<li><a  href="#">» Cras id augue nunc</a></li>
-							<li><a  href="#">» In nec justo non</a></li>
-							<li><a 	href="#">» Vivamus mollis enim ut</a></li>
-							<li><a	href="#">» Curabitur hendrerit est</a></li>
-							<li><a 	href="#">» Sed a nulla urna</a></li>
-						</ul>
-					</div>
+					<ul class="card-list">
+						<li><a  href="#">» Lorem ipsum dolor sit</a></li>
+						<li><a  href="#">» Amet consectetur</a></li>
+						<li><a  href="#">» Praesent vel sem id</a></li>
+						<li><a  href="#">» Curabitur hendrerit est</a></li>
+						<li><a  href="#">» Aliquam eget erat nec sapien</a></li>
+						<li><a  href="#">» Cras id augue nunc</a></li>
+						<li><a  href="#">» In nec justo non</a></li>
+						<li><a 	href="#">» Vivamus mollis enim ut</a></li>
+						<li><a	href="#">» Curabitur hendrerit est</a></li>
+						<li><a 	href="#">» Sed a nulla urna</a></li>
+					</ul>
 		  		</div>
 			</div>
-			<div class="col-lg-3 col-md-5 col-sm-12">
+			<div class="nav__footer__item">
 				<div class="bar_posts">
 					<h3 class="latest_post_h">LATEST BLOG POSTS</h3>
 					<h5>Post Title</h5>
@@ -264,7 +258,7 @@
 				  	<div class="read_more"><a href="#">Read More</a></div>
 			  	</div>
 			</div>
-			<div class="col-lg-3 col-md-5 col-sm-12">
+			<div class="nav__footer__item">
 				<div class="contact_bar">
 					<h3>CONTACT US</h3>
 					<input  type="text" name="name" placeholder='Name'>
@@ -278,16 +272,18 @@
 	</div>
 	</footer>
 	<div class="footer">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-6 col-md-12 col-sm-12">
-				<p class="footer_left">Copyright 2013 Domain Name - All Rights Reserved</p>
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<p class="footer_left">Copyright 2013 Domain Name - All Rights Reserved</p>
+				</div>
+				<div class="col-lg-6 col-md-12 col-sm-12">
+					<p class="footer_right">Template by OS Templates</p>
+				</div>
 			</div>
-			<div class="col-lg-6 col-md-12 col-sm-12">
-				<p class="footer_right">Template by OS Templates</p>
-			</div>
-		</div>
-	</div> 
-</div>
+		</div> 
+	</div>
+
+	<script src="./script.js"></script>
 </body>
 </html>
